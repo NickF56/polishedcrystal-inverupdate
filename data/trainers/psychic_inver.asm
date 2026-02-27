@@ -41,12 +41,9 @@ endc
 		tr_extra MAGIC_GUARD, SATK_UP_ATK_DOWN
 		tr_evs 4 HP, 252 SAt, 252 Spe
 		tr_moves PSYCHIC_M, ENERGY_BALL, FOCUS_BLAST, NASTY_PLOT
-
-
-
 	tr_mon 65, RHYDON @ EVIOLITE, MALE
 		tr_evs 252 HP, 4 Def 252 SDf
-		tr_extra DOWNLOAD, SDEF_UP_SATK_DOWN
+		tr_extra SOLID_ROCK, SDEF_UP_SATK_DOWN
 		tr_moves EARTHQUAKE, STONE_EDGE, GIGA_IMPACT, CURSE
 	end_trainer
 
