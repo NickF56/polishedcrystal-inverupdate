@@ -43,8 +43,8 @@ endc
 		tr_moves PSYCHIC_M, ENERGY_BALL, FOCUS_BLAST, NASTY_PLOT
 	tr_mon 65, RHYDON @ EVIOLITE, MALE
 		tr_evs 252 HP, 4 Def 252 SDf
-		tr_extra SOLID_ROCK, SDEF_UP_SATK_DOWN
-		tr_moves EARTHQUAKE, STONE_EDGE, GIGA_IMPACT, CURSE
+		tr_extra RECKLESS, SDEF_UP_SATK_DOWN
+		tr_moves EARTHQUAKE, STONE_EDGE, DOUBLE_EDGE, CURSE
 	end_trainer
 
 	assert (_tr_mons == NUM_INVER_MONS), "{d:_tr_mons} != {NUM_INVER_MONS}"
