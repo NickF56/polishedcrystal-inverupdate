@@ -7,15 +7,15 @@ PsychicInverGroup:
 	def_trainer 1, "Inver"
 	tr_mon 65, EXEGGUTOR @ FIGY_BERRY, MALE
 		tr_extra HARVEST, SATK_UP_ATK_DOWN
-		tr_evs 252 HP, 252 Def, 4 SDf
+		tr_evs 252 HP, 132 Def
 		tr_moves PSYCHIC_M, SUNNY_DAY, HP_FIRE, SOLAR_BEAM
 	tr_mon 65, WEAVILE, MALE
 		tr_extra PICKPOCKET, ATK_UP_SATK_DOWN
-		tr_evs 4 HP, 252 Atk, 252 Spe
+		tr_evs 132 Atk, 252 Spe
 		tr_moves NIGHT_SLASH, ICE_PUNCH, SLASH, SWORDS_DANCE
 	tr_mon 65, PARASECT @ QUICK_CLAW, MALE
 		tr_extra EFFECT_SPORE, ATK_UP_SATK_DOWN
-		tr_evs 252 HP, 252 Atk, 4 SDf
+		tr_evs 132 HP, 252 Atk
 if DEF(FAITHFUL)
 		tr_moves LEECH_LIFE, SEED_BOMB, SLUDGE_BOMB, SLASH
 else
@@ -23,11 +23,11 @@ else
 endc
 	tr_mon 65, PORYGON2 @ EVIOLITE, MALE
 		tr_extra DOWNLOAD, DEF_UP_ATK_DOWN
-		tr_evs 252 HP, 100 Def, 156 SDf
+		tr_evs 252 HP, 48 Def, 84 SDf
 		tr_moves RECOVER, TRI_ATTACK, THUNDER_WAVE, SHADOW_BALL
 	tr_mon 65, SNORLAX @ LEFTOVERS, MALE
 		tr_extra IMMUNITY, ATK_UP_SATK_DOWN
-		tr_evs 252 HP, 252 Def, 4 SDf
+		tr_evs 252 HP, 132 Def
 		tr_moves CURSE, REST, SLEEP_TALK, RETURN
 	tr_mon 65, JYNX @ WIDE_LENS, FEMALE
 if DEF(FAITHFUL)
@@ -35,16 +35,45 @@ if DEF(FAITHFUL)
 else
 		tr_extra FILTER, SATK_UP_ATK_DOWN
 endc
-		tr_evs 4 HP, 252 SAt, 252 Spe
+		tr_evs 132 SAt, 252 Spe
 		tr_moves PSYCHIC_M, BLIZZARD, NASTY_PLOT, SING
 	tr_mon 65, ALAKAZAM @ FOCUS_SASH, MALE
 		tr_extra MAGIC_GUARD, SATK_UP_ATK_DOWN
-		tr_evs 4 HP, 252 SAt, 252 Spe
+		tr_evs 252 SAt, 132 Spe
 		tr_moves PSYCHIC_M, ENERGY_BALL, FOCUS_BLAST, NASTY_PLOT
 	tr_mon 65, RHYDON @ EVIOLITE, MALE
-		tr_evs 252 HP, 4 Def 252 SDf
+		tr_evs 252 HP, 132 SDf
 		tr_extra RECKLESS, SDEF_UP_SATK_DOWN
 		tr_moves EARTHQUAKE, STONE_EDGE, DOUBLE_EDGE, CURSE
+
+	tr_mon 65, URSALUNA @ ASSAULT_VEST, MALE
+		tr_evs 252 HP, 132 Atk
+		tr_extra BULLETPROOF, ATK_UP_SATK_DOWN
+		tr_moves EARTHQUAKE, STONE_EDGE, RETURN, GUNK_SHOT
+	tr_mon 65, SLOWBRO @ QUICK_CLAW, MALE | GALARIAN_FORM
+		tr_evs 252 HP, 132 SAt
+		tr_extra QUICK_DRAW, SATK_UP_SPD_DOWN
+		tr_moves SCALD, SLUDGE_BOMB, PSYCHIC, ICE_BEAM
+	tr_mon 65, FEAROW @ SCOPE_LENS, MALE
+		tr_evs 132 Atk, 252 Spd
+		tr_extra SNIPER, ATK_UP_SATK_DOWN
+		tr_moves DOUBLE_EDGE, DRILL_PECK, STEEL_WING, U_TURN
+	tr_mon 65, DUDUNSPARCE @ WEAK_POLICY, MALE | THREE_SEGMENT_FORM
+		tr_evs 132 HP, 252 Spd
+		tr_extra RATTLED, SPD_UP_SATK_DOWN
+		tr_moves DRAGON_DANCE, RETURN, OUTRAGE, ACROBATICS
+	tr_mon 65, CLODSIRE @ BLACK_SLUDGE, MALE
+		tr_evs 252 HP, 132 Def
+		tr_extra UNAWARE, SDEF_UP_SATK_DOWN
+		tr_moves TOXIC, CURSE, RECOVER, GUNK_SHOT
+	tr_mon 65, VICTREEBEL @ SALAC_BERRY, MALE
+		tr_evs 132 Atk, 252 Spd
+		tr_extra GLUTTONY, ATK_UP_SATK_DOWN
+		tr_moves SWORDS_DANCE, POWER_WHIP, POISON_JAB, LEECH_LIFE
+	tr_mon 65, NIDOKING @ LIFE_ORB, MALE
+		tr_evs 132 SAt, 252 Spd
+		tr_extra SHEER_FORCE, SPD_UP_ATK_DOWN
+		tr_moves SLUDGE_BOMB, EARTH_POWER, THUNDERBOLT, ICE_BEAM
 	end_trainer
 
 	assert (_tr_mons == NUM_INVER_MONS), "{d:_tr_mons} != {NUM_INVER_MONS}"
